@@ -22,6 +22,8 @@ HTML describes _elements_- these represent the vocabulary of content. Many of
 these elements will be familiar- headings, paragraphs, images, and lists. The
 type of element is placed between angle brackets `<`, `>`.
 
+---
+
 In markup languages, the term 'whitespace' refers to spaces, line breaks,
 and indentation. In HTML, whitespace is mostly ignored- this makes it easier
 to keep our HTML neat, but it also means if we want line breaks, it must be
@@ -29,6 +31,8 @@ added as a markup element using, for example, a `<br>` element.
 ```html
 <br>
 ```
+
+---
 
 Elements can also be used to describe a section of text. In this case, the
 start of the section has a `<tag>` and the end of the section has a closing
@@ -44,6 +48,8 @@ and below them.
 for our furry friends. </p>
 ```
 
+---
+
 Some elements need some additional information to be provided in order to be
 useful. This information is provided in the form of _attributes_. Attributes
 are placed inside the starting tag of an element in the format `name="value"`.
@@ -53,6 +59,8 @@ the image to display using the source (`src=`) attribute.
 ```html
 <img src="coco.jpg" alt="A photo of Coco, up for adoption">
 ```
+
+---
 
 Elements can contain other elements as content- this is very commonly used to
 build up the content structure of a whole page. When building structure, make
@@ -109,6 +117,8 @@ next.
 - include a paragraph to caption the image
 - include an unordered list of tags to add to the image
 
+---
+
 ```html
 <header>
   <h1>Lexergram</h1>
@@ -155,6 +165,8 @@ img {
 }
 ```
 
+---
+
 CSS also has the concept of a 'class', which represents an element's purpose
 or category. Classes must be manually added to HTML elements as attributes
 (e.g. `<ul class="tags">`) but there is a shorthand to reference all elements
@@ -165,6 +177,8 @@ with a particular class in CSS by adding a `.` in front of the name.
     list-style: none;
 }
 ```
+
+---
 
 Selectors can be chained together to restrict the scope where they apply- this
 is very useful to apply rules only in a specific context. To chain rules, write
@@ -255,6 +269,8 @@ Exercise 2: use CSS to apply some layout to our HTML page
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,700|Lobster');
 ```
 
+---
+
 ```css
 /* background styling */
 body {
@@ -262,6 +278,8 @@ body {
   background: #B2AABE;
 }
 ```
+
+---
 
 ```css
 /* header styling */
@@ -279,6 +297,8 @@ h1 {
 }
 ```
 
+---
+
 ```css
 /* style the main body content */
 article {
@@ -287,6 +307,8 @@ article {
   color: #3D1A71;
 }
 ```
+
+---
 
 ```css
 /* style our Instagram cards */
@@ -305,6 +327,8 @@ img {
 }
 ```
 
+---
+
 ```css
 /* do some fancy tag styling */
 ul li {
@@ -319,3 +343,9 @@ ul li::before {
   content: '#';
 }
 ```
+
+## More
+
+[Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML)
+has extensive documentation for HTML and CSS, as well as more tutorials to
+further your knowledge!
